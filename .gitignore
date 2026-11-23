@@ -1,0 +1,22 @@
+# Terraform 로컬 캐시/플러그인 (용량 큼 + 재생성 가능)
+**/.terraform/*
+
+# State 파일 (민감 정보 평문 포함 → 절대 커밋 금지)
+*.tfstate
+*.tfstate.*
+
+# 변수 파일 (키, 비밀번호가 들어가는 경우가 많음)
+*.tfvars
+*.tfvars.json
+
+# 크래시 로그 / 로컬 override
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI 설정
+.terraformrc
+terraform.rc
